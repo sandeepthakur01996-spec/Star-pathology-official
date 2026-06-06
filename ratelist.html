@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STAR PATHOLOGY RATE LIST</title>
+<style>
+body{font-family:Arial;padding:20px;background:#f5f8fc}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{border:1px solid #ccc;padding:8px}
+th{background:#001b44;color:white}
+h1{text-align:center}
+</style></head><body>
+<a href="index.html"
+style="
+background:#001b44;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+margin-bottom:20px;
+">
+← Back to Home
+</a>
+
+<h1>STAR PATHOLOGY RATE LIST</h1>
+<input
+type="text"
+id="searchInput"
+onkeyup="searchTable()"
+placeholder="Search Test Name..."
+style="
+width:100%;
+padding:12px;
+margin:20px 0;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:8px;
+">
+<table><tr><th>S.No.</th><th>Test Name</th><th>Rate</th></tr>
+<tr><td>1</td><td>1.25 Hydroxy</td><td>1400</td></tr>
+<tr><td>2</td><td>24 hrs Urine Protein</td><td>300</td></tr>
+<tr><td>3</td><td>25 OH ( Vitamin D & D3 )</td><td>800</td></tr>
+<tr><td>4</td><td>ABO-Rh</td><td>50</td></tr>
+<tr><td>5</td><td>Acetylcholine Receptor Ab</td><td>3000</td></tr>
+<tr><td>6</td><td>Acid Phosphate</td><td>300</td></tr>
+<tr><td>7</td><td>ACTH</td><td>1400</td></tr>
+<tr><td>8</td><td>Adenosine Deaminase (ADA)</td><td>300</td></tr>
+<tr><td>9</td><td>Albumin</td><td>80</td></tr>
+<tr><td>10</td><td>Alcohol</td><td>700</td></tr>
+<tr><td>11</td><td>Aldolase</td><td>1200</td></tr>
+<tr><td>12</td><td>Aldosterone</td><td>1800</td></tr>
+<tr><td>13</td><td>Alkaline Phosphatase</td><td>80</td></tr>
+<tr><td>14</td><td>Alpha 1 Antitrypsin</td><td>1600</td></tr>
+<tr><td>15</td><td>Alpha Felo Protein (AFP)</td><td>400</td></tr>
+<tr><td>16</td><td>Ammonia</td><td>600</td></tr>
+<tr><td>17</td><td>Amoebiasis (Entamoeba HistoIytica)-IgG</td><td>1000</td></tr>
+<tr><td>18</td><td>Amoebiasis (Entamoeba HistoIytica)-IgM</td><td>1000</td></tr>
+<tr><td>19</td><td>Amylase</td><td>300</td></tr>
+<tr><td>20</td><td>Amylase Fluid</td><td>300</td></tr>
+<tr><td>21</td><td>ANA</td><td>400</td></tr>
+<tr><td>22</td><td>ANA BY Immunofluorescence</td><td>900</td></tr>
+<tr><td>23</td><td>ANA-Profile (17 Antigens)</td><td>2800</td></tr>
+<tr><td>24</td><td>ANCA-C</td><td>1000</td></tr>
+<tr><td>25</td><td>ANCA-P</td><td>1000</td></tr>
+<tr><td>26</td><td>Androstenedione</td><td>800</td></tr>
+<tr><td>27</td><td>Angiotensin Converting enzyme (ACE)</td><td>800</td></tr>
+<tr><td>28</td><td>Anti Diuretic Hormone (ADH)</td><td>3000</td></tr>
+<tr><td>29</td><td>Anti GBM Antibody (New)</td><td>1500</td></tr>
+<tr><td>30</td><td>Anti Gliadin Antibody -IgA</td><td>1600</td></tr>
+<tr><td>31</td><td>Anti Gliadin Antibody-lgG</td><td>1600</td></tr>
+<tr><td>32</td><td>Anti Mitochondrial Antibody</td><td>1800</td></tr>
+<tr><td>33</td><td>ANTI MOG ANTIBODY (MYELINEOLIGODENDROCYTE
+GLYCOPROTINE)</td><td>6500</td></tr>
+<tr><td>34</td><td>Anti Ovarian Antibody</td><td>1200</td></tr>
+<tr><td>35</td><td>Anti Sperm Antibody</td><td>1600</td></tr>
+<tr><td>36</td><td>Anti Thrombin III</td><td>2800</td></tr>
+<tr><td>37</td><td>Anti Thyroid peroxidase antibodies (TPO)</td><td>700</td></tr>
+<tr><td>38</td><td>Anti thyroglobulin antibody(TG)</td><td>1100</td></tr>
+<tr><td>39</td><td>APTT</td><td>300</td></tr>
+<tr><td>40</td><td>Anti-DNA</td><td>600</td></tr>
+<tr><td>41</td><td>Anti-Mullerian Hormone</td><td>1600</td></tr>
+<tr><td>42</td><td>ApoIipo-A1</td><td>500</td></tr>
+<tr><td>43</td><td>Apolipo -B</td><td>500</td></tr>
+<tr><td>44</td><td>ASCA -IgG</td><td>1800</td></tr>
+<tr><td>45</td><td>ASCA -IgM</td><td>1800</td></tr>
+<tr><td>46</td><td>ASO (Nephelometric)</td><td>400</td></tr>
+<tr><td>47</td><td>Aspergillus -IgG</td><td>1400</td></tr>
+<tr><td>48</td><td>Aspergillus (IgG/IgM)</td><td>1400</td></tr>
+<tr><td>49</td><td>Aspergillus Galectomenon</td><td>3000</td></tr>
+<tr><td>50</td><td>B.D.GIucan</td><td>6000</td></tr>
+<tr><td>51</td><td>B2  Glycoprotein -IgG</td><td>800</td></tr>
+<tr><td>52</td><td>B2  Glycoprotein -IgM</td><td>800</td></tr>
+<tr><td>53</td><td>B2 Microglobulm</td><td>1200</td></tr>
+<tr><td>54</td><td>Bence Jones Protein</td><td>700</td></tr>
+<tr><td>55</td><td>Beta HCG</td><td>500</td></tr>
+<tr><td>56</td><td>Bicarbonate</td><td>400</td></tr>
+<tr><td>57</td><td>Bile Acid (New)</td><td>1000</td></tr>
+<tr><td>58</td><td>Biopsy - Small</td><td>900</td></tr>
+<tr><td>59</td><td>Biopsy - medium</td><td>1500</td></tr>
+<tr><td>60</td><td>Biopsy - Large</td><td>2500</td></tr>
+<tr><td>61</td><td>Bilirubin (T&D)</td><td>80</td></tr>
+<tr><td>62</td><td>Blood Sugar Level</td><td>30</td></tr>
+<tr><td>63</td><td>Body Fluid R&M</td><td>300</td></tr>
+<tr><td>64</td><td>BUN</td><td>80</td></tr>
+<tr><td>65</td><td>BNP (Heart Failure Marker).</td><td>2400</td></tr>
+<tr><td>66</td><td>Brucella -IgG</td><td>900</td></tr>
+<tr><td>67</td><td>Brucella -IgM</td><td>900</td></tr>
+<tr><td>68</td><td>C - PSA (Complex PSA) (New)</td><td>700</td></tr>
+<tr><td>69</td><td>C1Q</td><td>1200</td></tr>
+<tr><td>70</td><td>C3</td><td>500</td></tr>
+<tr><td>71</td><td>C4</td><td>500</td></tr>
+<tr><td>72</td><td>CA 125</td><td>700</td></tr>
+<tr><td>73</td><td>CA 15.3</td><td>800</td></tr>
+<tr><td>74</td><td>CA 19.9</td><td>800</td></tr>
+<tr><td>75</td><td>CA 72.4</td><td>1600</td></tr>
+<tr><td>76</td><td>Calcitionin</td><td>1800</td></tr>
+<tr><td>77</td><td>Calcium</td><td>80</td></tr>
+<tr><td>78</td><td>Calprotectin</td><td>3000</td></tr>
+<tr><td>79</td><td>Candida Antibody -IgG</td><td>1200</td></tr>
+<tr><td>80</td><td>Candida Antibody -IgM</td><td>1200</td></tr>
+<tr><td>81</td><td>Carbamazepine</td><td>600</td></tr>
+<tr><td>82</td><td>Cardiolipin -IgA</td><td>400</td></tr>
+<tr><td>83</td><td>Cardiolipin -IgG</td><td>400</td></tr>
+<tr><td>84</td><td>Cardiolipin -IgM</td><td>400</td></tr>
+<tr><td>85</td><td>Catecholamine-Serum/Urine (24 hrs
+collection inHCL)</td><td>3200</td></tr>
+<tr><td>86</td><td>CBC</td><td>250</td></tr>
+<tr><td>87</td><td>CBC with ESR</td><td>300</td></tr>
+<tr><td>88</td><td>CCP - RA (NEW)</td><td>800</td></tr>
+<tr><td>89</td><td>CD4/CD8</td><td>1400</td></tr>
+<tr><td>90</td><td>CEA</td><td>400</td></tr>
+<tr><td>91</td><td>Ceruloplasmin</td><td>1000</td></tr>
+<tr><td>92</td><td>Chikun Gunya -IgG</td><td>500</td></tr>
+<tr><td>93</td><td>Chikun Gunya -IgM</td><td>500</td></tr>
+<tr><td>94</td><td>Chlamydia -IgG</td><td>800</td></tr>
+<tr><td>95</td><td>Chlamydia -IgM</td><td>800</td></tr>
+<tr><td>96</td><td>Cholinesterase</td><td>1000</td></tr>
+<tr><td>97</td><td>Chromogranin-A</td><td>4000</td></tr>
+<tr><td>98</td><td>CMV - PCR (Qualitative)</td><td>3500</td></tr>
+<tr><td>99</td><td>CMV - PCR (Quantitative)</td><td>4000</td></tr>
+<tr><td>100</td><td>Coomb's test Direct</td><td>500</td></tr>
+<tr><td>101</td><td>Coomb's test Indirect</td><td>500</td></tr>
+<tr><td>102</td><td>Copper Serum</td><td>1400</td></tr>
+<tr><td>103</td><td>Copper Urine / Serum</td><td>1400</td></tr>
+<tr><td>104</td><td>Cortisol - Serum (AM or PM)  EACH</td><td>400</td></tr>
+<tr><td>105</td><td>Cortisol - Urine (24 hrs collection in Glacial
+Acid)</td><td>600</td></tr>
+<tr><td>106</td><td>Covid-19 Antigen Sars-CoV-2 (COVID-19)</td><td>250</td></tr>
+<tr><td>107</td><td>Covid-19 - spiked Ab</td><td>500</td></tr>
+<tr><td>108</td><td>C-Peptide</td><td>800</td></tr>
+<tr><td>109</td><td>CPK-NAC</td><td>300</td></tr>
+<tr><td>110</td><td>CPK-MB</td><td>400</td></tr>
+<tr><td>111</td><td>Creatinine</td><td>80</td></tr>
+<tr><td>112</td><td>Creatinine Clearence Test</td><td>300</td></tr>
+<tr><td>113</td><td>CRP</td><td>300</td></tr>
+<tr><td>114</td><td>CRP (High sensitive)</td><td>500</td></tr>
+<tr><td>115</td><td>Cryptococcus Antibody</td><td>1600</td></tr>
+<tr><td>116</td><td>CSF Protein</td><td>100</td></tr>
+<tr><td>117</td><td>CSF R&M</td><td>300</td></tr>
+<tr><td>118</td><td>Culture and sensitivity-  Blood</td><td>1000</td></tr>
+<tr><td>119</td><td>Culture and sensitivity -stool/Pus/ Body
+Fluid/Tissue</td><td>500</td></tr>
+<tr><td>120</td><td>Culture and sensitivity -urine</td><td>400</td></tr>
+<tr><td>121</td><td>Cyclosporine</td><td>2200</td></tr>
+<tr><td>122</td><td>Cystatin C (New)</td><td>1600</td></tr>
+<tr><td>123</td><td>Cysticercosis -IgG</td><td>1000</td></tr>
+<tr><td>124</td><td>Cysticercosis -IgM</td><td>1000</td></tr>
+<tr><td>125</td><td>Cytomegalo virus (CMV) -IgG</td><td>250</td></tr>
+<tr><td>126</td><td>Cytomegalo virus (CMV) -IgM</td><td>250</td></tr>
+<tr><td>127</td><td>D- Dimer</td><td>700</td></tr>
+<tr><td>128</td><td>D-Dimer & FDP</td><td>1200</td></tr>
+<tr><td>129</td><td>Dengue -IgG -RAPID</td><td>500</td></tr>
+<tr><td>130</td><td>Dengue -IgM-RAPID</td><td>500</td></tr>
+<tr><td>131</td><td>Dengue NS1 Ag -RAPID</td><td>500</td></tr>
+<tr><td>132</td><td>Dengue NS1,IgG,IgM - RAPID</td><td>800</td></tr>
+<tr><td>133</td><td>Dengue -IgG</td><td>700</td></tr>
+<tr><td>134</td><td>Dengue -IgM</td><td>700</td></tr>
+<tr><td>135</td><td>Dengue NS1</td><td>700</td></tr>
+<tr><td>136</td><td>Dengue NS1,IgG,IgM</td><td>1600</td></tr>
+<tr><td>137</td><td>Desmoglein Ab- Dsg-1</td><td>1600</td></tr>
+<tr><td>138</td><td>Desmoglein Ab -Dsg-3</td><td>1600</td></tr>
+<tr><td>139</td><td>DHEAS - Sulphate</td><td>500</td></tr>
+<tr><td>140</td><td>Digoxin</td><td>600</td></tr>
+<tr><td>141</td><td>Dihydrotestpsterone</td><td>1600</td></tr>
+<tr><td>142</td><td>Dilantin (Pheytoin)</td><td>600</td></tr>
+<tr><td>143</td><td>Os DNA</td><td>600</td></tr>
+<tr><td>144</td><td>Double Marker (free BCG/PAPPA)</td><td>1800</td></tr>
+<tr><td>145</td><td>Drug of Abuse (8 drugs)</td><td>4000</td></tr>
+<tr><td>146</td><td>E GFR</td><td>300</td></tr>
+<tr><td>147</td><td>Echinococcus -IgG</td><td>1200</td></tr>
+<tr><td>148</td><td>Echinococcus -IgM</td><td>1200</td></tr>
+<tr><td>149</td><td>Electrolytes (Na , K", CI-)</td><td>300</td></tr>
+<tr><td>150</td><td>Endomysial Antibodies -IgA</td><td>1600</td></tr>
+<tr><td>151</td><td>Endomysial Antibodies -IgG</td><td>1600</td></tr>
+<tr><td>152</td><td>Endomysial Antibodies -IgM</td><td>1600</td></tr>
+<tr><td>153</td><td>Epsteinbarr Virus -IgG</td><td>1000</td></tr>
+<tr><td>154</td><td>Epsteinbarr Virus -IgM</td><td>1000</td></tr>
+<tr><td>155</td><td>Erythropoetin</td><td>1800</td></tr>
+<tr><td>156</td><td>Estradiol (E2)</td><td>400</td></tr>
+<tr><td>157</td><td>Estriol (E3) Free</td><td>700</td></tr>
+<tr><td>158</td><td>ESR (Erythrocyte sedimentation rate)</td><td>50</td></tr>
+<tr><td>159</td><td>Factor  X</td><td>2200</td></tr>
+<tr><td>160</td><td>Factor V</td><td>1800</td></tr>
+<tr><td>161</td><td>Factor VI</td><td>1800</td></tr>
+<tr><td>162</td><td>Factor VII</td><td>1800</td></tr>
+<tr><td>163</td><td>Factor VIII</td><td>1800</td></tr>
+<tr><td>164</td><td>FDP</td><td>900</td></tr>
+<tr><td>165</td><td>Ferritin</td><td>400</td></tr>
+<tr><td>166</td><td>Fibrinogen</td><td>900</td></tr>
+<tr><td>167</td><td>Filaria Antobody - IgG</td><td>500</td></tr>
+<tr><td>168</td><td>Filaria Antobody - IgM</td><td>500</td></tr>
+<tr><td>169</td><td>Folic Acid</td><td>500</td></tr>
+<tr><td>170</td><td>Free Beta HCG</td><td>1000</td></tr>
+<tr><td>171</td><td>Free PSA</td><td>700</td></tr>
+<tr><td>172</td><td>Free T3</td><td>150</td></tr>
+<tr><td>173</td><td>Free  T4</td><td>150</td></tr>
+<tr><td>174</td><td>Free T3, Free T4,TSH</td><td>300</td></tr>
+<tr><td>175</td><td>FSH</td><td>250</td></tr>
+<tr><td>176</td><td>G6PD (Quantitative)</td><td>400</td></tr>
+<tr><td>177</td><td>GAD Antibody (New)</td><td>1800</td></tr>
+<tr><td>178</td><td>GamaGT</td><td>300</td></tr>
+<tr><td>179</td><td>Gastrin</td><td>2000</td></tr>
+<tr><td>180</td><td>H. Pylori -IgA</td><td>600</td></tr>
+<tr><td>181</td><td>H. Pylori - IgG</td><td>600</td></tr>
+<tr><td>182</td><td>Haptoglobin</td><td>1600</td></tr>
+<tr><td>183</td><td>HBA2 (Thalassemia, Sicklecell)</td><td>600</td></tr>
+<tr><td>184</td><td>Hb%</td><td>50</td></tr>
+<tr><td>185</td><td>HBAIC (Glycosylated)</td><td>300</td></tr>
+<tr><td>186</td><td>HBs Ag</td><td>300</td></tr>
+<tr><td>187</td><td>HBS Antibody (Quantitative)</td><td>500</td></tr>
+<tr><td>188</td><td>HBV DNA - PCR (Qualitative)</td><td>2200</td></tr>
+<tr><td>189</td><td>HBV DNA - PCR (Quantitative)</td><td>2600</td></tr>
+<tr><td>190</td><td>HCV - PCR (Quantitative)</td><td>3000</td></tr>
+<tr><td>191</td><td>HCV ( C Virus)</td><td>500</td></tr>
+<tr><td>192</td><td>HCV RNA Genotype ( New)</td><td>8000</td></tr>
+<tr><td>193</td><td>HE-4 (Human epididymis protien 4)
+OvarianMarker</td><td>2500</td></tr>
+<tr><td>194</td><td>Hepatitis - A -IgG</td><td>550</td></tr>
+<tr><td>195</td><td>Hepatitis - A - IgM</td><td>550</td></tr>
+<tr><td>196</td><td>Hep-B Core -IgG</td><td>550</td></tr>
+<tr><td>197</td><td>Hep-B Core - IgM</td><td>550</td></tr>
+<tr><td>198</td><td>Hep - e - Antigen</td><td>800</td></tr>
+<tr><td>199</td><td>Hep- e - Antibody</td><td>800</td></tr>
+<tr><td>200</td><td>Herpes Zoster -IgG</td><td>1600</td></tr>
+<tr><td>201</td><td>Herpes Zoster - IgM</td><td>1600</td></tr>
+<tr><td>202</td><td>HEV ( E Virus )  IgG</td><td>800</td></tr>
+<tr><td>203</td><td>HEV ( E Virus )  IgM</td><td>800</td></tr>
+<tr><td>204</td><td>HIV</td><td>300</td></tr>
+<tr><td>205</td><td>HIV Repid</td><td>200</td></tr>
+<tr><td>206</td><td>HLA B27</td><td>1400</td></tr>
+<tr><td>207</td><td>HIV - PCR (Quant) Viral Load</td><td>3500</td></tr>
+<tr><td>208</td><td>HIV Western Blott</td><td>2400</td></tr>
+<tr><td>209</td><td>HLA B27 PCR</td><td>3000</td></tr>
+<tr><td>210</td><td>Homocysteine</td><td>1000</td></tr>
+<tr><td>211</td><td>HOMA IR</td><td>500</td></tr>
+<tr><td>212</td><td>Immature platelet fraction (IPF) New</td><td>500</td></tr>
+<tr><td>213</td><td>HSV - PCR (Qualitative)</td><td>3500</td></tr>
+<tr><td>214</td><td>HSV - PCR (Quantitative)</td><td>3000</td></tr>
+<tr><td>215</td><td>HSV  I -IgG</td><td>250</td></tr>
+<tr><td>216</td><td>HSV  I -IgM</td><td>250</td></tr>
+<tr><td>217</td><td>HSV II- IgG</td><td>250</td></tr>
+<tr><td>218</td><td>HSV II- IgM</td><td>250</td></tr>
+<tr><td>219</td><td>Human Growth Hormone (HGH)</td><td>500</td></tr>
+<tr><td>220</td><td>IgE</td><td>400</td></tr>
+<tr><td>221</td><td>IgFBP1</td><td>1800</td></tr>
+<tr><td>222</td><td>IGFBP3</td><td>1800</td></tr>
+<tr><td>223</td><td>Immuno ElectrophoresiS (Free Light Chain
+Assay)</td><td>8000</td></tr>
+<tr><td>224</td><td>Immunoglobulins -IgA</td><td>800</td></tr>
+<tr><td>225</td><td>Immunoglobulins -IgG</td><td>800</td></tr>
+<tr><td>226</td><td>Immunoglobulins -IgM</td><td>800</td></tr>
+<tr><td>227</td><td>Inhibin A</td><td>1600</td></tr>
+<tr><td>228</td><td>Inhibin B</td><td>1600</td></tr>
+<tr><td>229</td><td>Insulin</td><td>400</td></tr>
+<tr><td>230</td><td>Insulin Antibodies</td><td>1600</td></tr>
+<tr><td>231</td><td>Interleukin - 6 (IL6)</td><td>1400</td></tr>
+<tr><td>232</td><td>Intrinstic Factor</td><td>2000</td></tr>
+<tr><td>233</td><td>lonized calcium</td><td>300</td></tr>
+<tr><td>234</td><td>Iron</td><td>300</td></tr>
+<tr><td>235</td><td>TIBC (Total Iron Binding Capacity)</td><td>300</td></tr>
+<tr><td>236</td><td>Iron,TIBC & % Transferrine (Iron Study)</td><td>600</td></tr>
+<tr><td>237</td><td>Islet Cell Antibody (New)</td><td>2000</td></tr>
+<tr><td>238</td><td>Japanese Encyphalitis -IgG</td><td>800</td></tr>
+<tr><td>239</td><td>Japanese Encyphalitis -IgM</td><td>800</td></tr>
+<tr><td>240</td><td>JO 1</td><td>2000</td></tr>
+<tr><td>241</td><td>Kappa Light  Free Chain</td><td>3000</td></tr>
+<tr><td>242</td><td>Lamda Light Fee  Chain</td><td>3000</td></tr>
+<tr><td>243</td><td>Lactate</td><td>900</td></tr>
+<tr><td>244</td><td>LDH</td><td>400</td></tr>
+<tr><td>245</td><td>LDL- Direct</td><td>120</td></tr>
+<tr><td>246</td><td>LE Cell</td><td>800</td></tr>
+<tr><td>247</td><td>Lead Blood / Urine</td><td>800</td></tr>
+<tr><td>248</td><td>Leprosy -IgG</td><td>1000</td></tr>
+<tr><td>249</td><td>Leprosy -IgM</td><td>1000</td></tr>
+<tr><td>250</td><td>Leptospira -IgG</td><td>800</td></tr>
+<tr><td>251</td><td>Leptospira - IgM</td><td>800</td></tr>
+<tr><td>252</td><td>LH</td><td>250</td></tr>
+<tr><td>253</td><td>Lipase</td><td>300</td></tr>
+<tr><td>254</td><td>Lipase Fluid</td><td>300</td></tr>
+<tr><td>255</td><td>Lipid Profile</td><td>300</td></tr>
+<tr><td>256</td><td>Lipo Protein (a)</td><td>500</td></tr>
+<tr><td>257</td><td>Lithium</td><td>400</td></tr>
+<tr><td>258</td><td>Liver Function (LFT)</td><td>300</td></tr>
+<tr><td>259</td><td>LKM Antobody</td><td>1400</td></tr>
+<tr><td>260</td><td>Lupus Anti Coagulant (LA)</td><td>700</td></tr>
+<tr><td>261</td><td>Magnesium</td><td>250</td></tr>
+<tr><td>262</td><td>Measles -IgG</td><td>800</td></tr>
+<tr><td>263</td><td>Measles - IgM</td><td>800</td></tr>
+<tr><td>264</td><td>Melanocyte Stimulating Hormone (MSH)</td><td>2000</td></tr>
+<tr><td>265</td><td>Metanephrin</td><td>2000</td></tr>
+<tr><td>266</td><td>Micro Albumin (Urine)</td><td>300</td></tr>
+<tr><td>267</td><td>Mitochondrial Antobodies</td><td>1800</td></tr>
+<tr><td>268</td><td>Mononucleosis -IgG</td><td>1000</td></tr>
+<tr><td>269</td><td>Mononucleosis -IgM</td><td>1000</td></tr>
+<tr><td>270</td><td>Malaria Parasite (MP)</td><td>100</td></tr>
+<tr><td>271</td><td>Malaria Antigen test</td><td>250</td></tr>
+<tr><td>272</td><td>Mumpus IgG</td><td>1000</td></tr>
+<tr><td>273</td><td>Mumpus IgM</td><td>1000</td></tr>
+<tr><td>274</td><td>Myoglobin</td><td>1200</td></tr>
+<tr><td>275</td><td>Nicotin (New)</td><td>1000</td></tr>
+<tr><td>276</td><td>NMO Antibody (New)</td><td>5000</td></tr>
+<tr><td>277</td><td>NSE 74 (Lung Cancer) (New)</td><td>1600</td></tr>
+<tr><td>278</td><td>Osmolality</td><td>700</td></tr>
+<tr><td>279</td><td>Papilloma Virus - PCR (New)</td><td>4000</td></tr>
+<tr><td>280</td><td>PAPPA (For early down's syndrome)</td><td>1400</td></tr>
+<tr><td>281</td><td>Parietal Cell Antibody (New)</td><td>2000</td></tr>
+<tr><td>282</td><td>Phenobarbitol</td><td>700</td></tr>
+<tr><td>283</td><td>Phospholipid -IgG</td><td>400</td></tr>
+<tr><td>284</td><td>Phospholipid - IgG</td><td>400</td></tr>
+<tr><td>285</td><td>Phospholipid - IgM</td><td>400</td></tr>
+<tr><td>286</td><td>Phosphorous</td><td>160</td></tr>
+<tr><td>287</td><td>Plasma Renin</td><td>3000</td></tr>
+<tr><td>288</td><td>PRO BNP</td><td>3000</td></tr>
+<tr><td>289</td><td>Procalcitonin (New)</td><td>1400</td></tr>
+<tr><td>290</td><td>Progesterone</td><td>400</td></tr>
+<tr><td>291</td><td>Progesterone 17 OH</td><td>700</td></tr>
+<tr><td>292</td><td>Prolectin</td><td>250</td></tr>
+<tr><td>293</td><td>Protein C</td><td>2600</td></tr>
+<tr><td>294</td><td>Protein  S</td><td>2600</td></tr>
+<tr><td>295</td><td>Protein Electrophoresis</td><td>800</td></tr>
+<tr><td>296</td><td>Protein Total</td><td>80</td></tr>
+<tr><td>297</td><td>PSA Total</td><td>400</td></tr>
+<tr><td>298</td><td>PTH (Parathyroid)</td><td>800</td></tr>
+<tr><td>299</td><td>PT-INR</td><td>250</td></tr>
+<tr><td>300</td><td>Quadruple Markers (BCG AFP E3 Inhibin-A)</td><td>3000</td></tr>
+</table> 
+<script>
+function searchTable() {
+
+let input = document.getElementById("searchInput");
+let filter = input.value.toUpperCase();
+
+let table = document.querySelector("table");
+let tr = table.getElementsByTagName("tr");
+
+for (let i = 1; i < tr.length; i++) {
+
+let td = tr[i].getElementsByTagName("td")[1];
+
+if (td) {
+
+let txtValue = td.textContent || td.innerText;
+
+if (txtValue.toUpperCase().indexOf(filter) > -1) {
+tr[i].style.display = "";
+} else {
+tr[i].style.display = "none";
+}
+
+}
+
+}
+
+}
+</script>
+
+</body>
+</html>
