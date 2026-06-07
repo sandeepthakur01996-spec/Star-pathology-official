@@ -234,7 +234,34 @@ font-size:30px;
 }
 
 }
+.dropdown{
+display:inline-block;
+position:relative;
+}
 
+.dropdown-content{
+display:none;
+position:absolute;
+background:#ffffff;
+min-width:180px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+z-index:999;
+}
+
+.dropdown-content a{
+display:block;
+padding:12px;
+text-decoration:none;
+color:#000;
+}
+
+.dropdown-content a:hover{
+background:#f1f1f1;
+}
+
+.dropdown:hover .dropdown-content{
+display:block;
+}
 </style>
 </head>
 
