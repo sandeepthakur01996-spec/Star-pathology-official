@@ -1301,11 +1301,41 @@ window.open(
 );
 
 }
+var images = [
 
+"star1.jpg.jpeg",
+"star2.jpg.jpeg",
+"star3.jpg.jpeg",
+"star4.jpg.jpeg",
+"star5.jpg.jpeg"
+
+];
+
+var i = 0;
+
+setInterval(function(){
+
+var slider =
+document.getElementById("slider");
+
+if(slider){
+
+i++;
+
+if(i >= images.length){
+
+i = 0;
+
+}
+
+slider.src = images[i];
+
+}
+
+},3000);
 </script>
 
-</body>
-</html><!-- QUALITY SECTION -->
+<!-- QUALITY SECTION -->
 
 <section class="section">
 
@@ -1994,3 +2024,113 @@ style="text-align:center;">
 </div>
 
 </section>
+  <!-- IMAGE SLIDER -->
+
+<section class="section">
+
+<h2 class="title">Our Gallery</h2>
+
+<div style="text-align:center;">
+
+<img id="slider"
+src="star1.jpg.jpeg"
+style="
+width:90%;
+max-width:900px;
+height:500px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+">
+
+</div>
+
+</section>
+<!-- SOCIAL + GOOGLE REVIEW + QUICK ACTIONS -->
+
+<section class="section">
+
+<h2 class="title">Connect With Us</h2>
+
+<div style="text-align:center;">
+
+<a href="https://www.instagram.com/"
+target="_blank"
+class="btn">
+Instagram
+</a>
+
+<a href="https://www.facebook.com/"
+target="_blank"
+class="btn">
+Facebook
+</a>
+
+<a href="https://g.page/r/CXXXXXXXX/review"
+target="_blank"
+class="btn">
+Google Review
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://wa.me/917999440567"
+target="_blank"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+z-index:9999;
+">
+💬
+</a>
+
+
+<!-- FLOATING CALL -->
+
+<a href="tel:+917999440567"
+style="
+position:fixed;
+bottom:90px;
+right:20px;
+background:#e53935;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+z-index:9999;
+">
+📞
+</a>
+
+
+<!-- FLOATING MAP -->
+
+<a href="https://maps.google.com"
+target="_blank"
+style="
+position:fixed;
+bottom:160px;
+right:20px;
+background:#1e88e5;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+z-index:9999;
+">
+📍
+</a>
