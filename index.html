@@ -2,687 +2,2178 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAR PATHOLOGY & ECG CENTRE</title>
-    <meta name="description" content="STAR PATHOLOGY & ECG CENTRE Ashta & Indore">
-    <meta name="keywords" content="Pathology Lab Ashta, Pathology Lab Indore, Blood Test, ECG Centre">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-            scroll-behavior: smooth;
-        }
+<meta charset="UTF-8">
 
-        body {
-            background: #f5f8fc;
-            color: #222;
-            overflow-x: hidden;
-        }
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-        .topbar {
-            background: #001b44;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .topbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        header {
-            background: white;
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
-            position: sticky;
-            top: 0;
-            z-index: 999;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo img {
-            height: 75px;
-        }
-
-        .logo h2 {
-            color: #003366;
-        }
-
-        nav a {
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 600;
-            color: #003366;
-        }
-
-        .hero {
-            height: 90vh;
-            background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url('star1.jpg.jpeg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 60px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 24px;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 5px;
-        }
-
-        .btn-primary {
-            background: #00a8ff;
-            color: white;
-        }
-
-        .btn-secondary {
-            background: #d4af37;
-            color: black;
-        }
-
-        .section {
-            padding: 80px 8%;
-        }
-
-        .title {
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 40px;
-            color: #003366;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
-            text-align: center;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-
-        .branch-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .branch {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
-        }
-
-        .branch h3 {
-            color: #003366;
-            margin-bottom: 15px;
-            font-size: 22px;
-        }
-
-        .branch p {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        .branch a {
-            color: #00a8ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #001b44;
-            color: white;
-            padding: 40px 8%;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        @media(max-width:768px) {
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero p {
-                font-size: 18px;
-            }
-
-            nav {
-                display: none;
-            }
-
-            .logo img {
-                height: 60px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="topbar">
-        📞 Ashta: <a href="tel:7999440567">7999440567</a> | 
-        📞 Indore: <a href="tel:6266492188">6266492188</a> | 
-        ✉ <a href="mailto:starpathologyreport7@gmail.com">starpathologyreport7@gmail.com</a>
-    </div>
-
-    <header>
-        <div class="logo">
-            <img src="logo.jpg.jpg" alt="Star Pathology Logo">
-            <div>
-                <h2>STAR PATHOLOGY</h2>
-                <p>Trusted Diagnostic Services</p>
-            </div>
-        </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#tests">Tests & Packages</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#branches">Branches</a>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div>
-            <h1>STAR PATHOLOGY & ECG CENTRE</h1>
-            <p>Accurate Results • Timely Reports • Trusted Service</p>
-            <a href="tel:7999440567" class="btn btn-primary">Call Now</a>
-            <a href="https://wa.me." class="btn btn-secondary" target="_blank">Book Home Collection</a>
-        </div>
-    </section>
-
-    <!-- ABOUT US -->
-    <section class="section">
-        <h2 class="title">Welcome To STAR PATHOLOGY & ECG CENTRE</h2>
-        <p style="max-width:1000px; margin:auto; text-align:center; font-size:18px; line-height:1.8;">
-            STAR PATHOLOGY & ECG CENTRE provides accurate, reliable and affordable diagnostic services in Ashta and Indore. We are committed to quality healthcare, accurate reporting and patient satisfaction. Our mission is to provide trustworthy pathology testing, ECG services, preventive health checkups and home sample collection facilities.
-        </p>
-    </section>
-
-    <!-- OUR SERVICES -->
-    <section id="services" class="section">
-        <h2 class="title">Our Services</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>🩸 Pathology Tests</h3>
-                <p style="margin-top:10px; color:#555;">Routine & Special Laboratory Tests</p>
-            </div>
-            <div class="card">
-                <h3>❤️ ECG Service</h3>
-                <p style="margin-top:10px; color:#555;">Fast & Reliable ECG Diagnostics</p>
-            </div>
-            <div class="card">
-                <h3>🏠 Home Collection</h3>
-                <p style="margin-top:10px; color:#555;">Convenient Sample Collection At Home</p>
-            </div>
-            <div class="card">
-                <h3>🩺 Full Body Checkup</h3>
-                <p style="margin-top:10px; color:#555;">Comprehensive Health Screening</p>
-            </div>
-            <div class="card">
-                <h3>📄 WhatsApp Reports</h3>
-                <p style="margin-top:10px; color:#555;">Digital Report Delivery</p>
-            </div>
-            <div class="card">
-                <h3>⚡ Emergency Support</h3>
-                <p style="margin-top:10px; color:#555;">Quick Patient Assistance</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section class="section" style="background:#eef3f9;">
-        <h2 class="title">Why Choose STAR PATHOLOGY</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>✔ Accurate Reports</h3>
-                <p style="margin-top:10px; color:#555;">Reliable Diagnostic Testing</p>
-            </div>
-            <div class="card">
-                <h3>✔ Fast Reporting</h3>
-                <p style="margin-top:10px; color:#555;">Quick Turnaround Time</p>
-            </div>
-            <div class="card">
-                <h3>✔ Home Collection</h3>
-                <p style="margin-top:10px; color:#555;">Doorstep Sample Collection</p>
-            </div>
-            <div class="card">
-                <h3>✔ Modern Equipment</h3>
-                <p style="margin-top:10px; color:#555;">Latest Diagnostic Technology</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEST SEARCH -->
-    <section id="tests" class="section">
-        <h2 class="title">Search Available Tests</h2>
-        <div style="text-align:center; margin-bottom: 40px;">
-            <input type="text" id="testSearch" placeholder="Search Test Name (e.g., CBC, LFT)..." onkeyup="searchTests()" style="width:80%; max-width:500px; padding:15px; border-radius:10px; border:1px solid #ccc; font-size:16px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-        </div>
-        <div class="cards" id="testList">
-            <div class="card testItem"><h3>CBC</h3></div>
-            <div class="card testItem"><h3>ESR</h3></div>
-            <div class="card testItem"><h3>Blood Sugar</h3></div>
-            <div class="card testItem"><h3>HbA1c</h3></div>
-            <div class="card testItem"><h3>Thyroid Profile</h3></div>
-            <div class="card testItem"><h3>LFT</h3></div>
-            <div class="card testItem"><h3>KFT</h3></div>
-            <div class="card testItem"><h3>Lipid Profile</h3></div>
-            <div class="card testItem"><h3>Vitamin D3</h3></div>
-            <div class="card testItem"><h3>Vitamin B12</h3></div>
-Bhai, maine aapka asli code poori tarah se clean aur optimize kar diya hai! Design bilkul waisa hi rahega jaisa aapne banaya tha, lekin ab yeh pehle se zyada professional dikhegi.
-## 🛠️ Maine Aapke Code Mein Kya Badlav Kiye Hain?
-
-   1. No Repetition (Faltu data hataya): "Why Patients Trust Us" aur kuch extra duplicate text blocks ko hatakar website ko short aur fast banaya hai.
-   2. No Rates Added: Aapke kahe mutabik koi bhi rate ya price nahi likha hai.
-   3. Clickable Mobile Numbers: Topbar, footer aur branches ke saare phone numbers ko clickable (tel:) bana diya hai taaki mobile user tap karte hi call kar sake.
-   4. WhatsApp Smart Booking Link: Home aur footer ke WhatsApp buttons mein pre-filled message daal diya hai taaki patient click karega toh direct "Hello Star Pathology" ka text open hoga.
-   5. Clean Code Structure: <div> tags jo adhure chhoote hue the (jaise aakhri line mein <di), unhe sahi karke proper closing tags lagaye hain aur search bar ke liye JavaScript code add kar diya hai taaki search real-time mein chalne lage.
-
-Aap is poore niche diye hue code ko apni index.html file mein purane code se badal (replace) lijiye. Aapki website ekdum clean ho jayegi:
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAR PATHOLOGY & ECG CENTRE</title>
-    <meta name="description" content="STAR PATHOLOGY & ECG CENTRE Ashta & Indore">
-    <meta name="keywords" content="Pathology Lab Ashta, Pathology Lab Indore, Blood Test, ECG Centre">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background: #f5f8fc;
-            color: #222;
-            overflow-x: hidden;
-        }
-
-        .topbar {
-            background: #001b44;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .topbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        header {
-            background: white;
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
-            position: sticky;
-            top: 0;
-            z-index: 999;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo img {
-            height: 75px;
-        }
-
-        .logo h2 {
-            color: #003366;
-        }
-
-        nav a {
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 600;
-            color: #003366;
-        }
-
-        .hero {
-            height: 90vh;
-            background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url('star1.jpg.jpeg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 60px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 24px;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 5px;
-        }
-
-        .btn-primary {
-            background: #00a8ff;
-            color: white;
-        }
-
-        .btn-secondary {
-            background: #d4af37;
-            color: black;
-        }
-
-        .section {
-            padding: 80px 8%;
-        }
-
-        .title {
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 40px;
-            color: #003366;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
-            text-align: center;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-
-        .branch-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .branch {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
-        }
-
-        .branch h3 {
-            color: #003366;
-            margin-bottom: 15px;
-            font-size: 22px;
-        }
-
-        .branch p {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        .branch a {
-            color: #00a8ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #001b44;
-            color: white;
-            padding: 40px 8%;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        @media(max-width:768px) {
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero p {
-                font-size: 18px;
-            }
-
-            nav {
-                display: none;
-            }
-
-            .logo img {
-                height: 60px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="topbar">
-        📞 Ashta: <a href="tel:7999440567">7999440567</a> | 
-        📞 Indore: <a href="tel:6266492188">6266492188</a> | 
-        ✉ <a href="mailto:starpathologyreport7@gmail.com">starpathologyreport7@gmail.com</a>
-    </div>
-
-    <header>
-        <div class="logo">
-            <img src="logo.jpg.jpg" alt="Star Pathology Logo">
-            <div>
-                <h2>STAR PATHOLOGY</h2>
-                <p>Trusted Diagnostic Services</p>
-            </div>
-        </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#tests">Tests & Packages</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#branches">Branches</a>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div>
-            <h1>STAR PATHOLOGY & ECG CENTRE</h1>
-            <p>Accurate Results • Timely Reports • Trusted Service</p>
-            <a href="tel:7999440567" class="btn btn-primary">Call Now</a>
-            <a href="https://wa.me." class="btn btn-secondary" target="_blank">Book Home Collection</a>
-        </div>
-    </section>
-
-    <!-- ABOUT US -->
-    <section class="section">
-        <h2 class="title">Welcome To STAR PATHOLOGY & ECG CENTRE</h2>
-        <p style="max-width:1000px; margin:auto; text-align:center; font-size:18px; line-height:1.8;">
-            STAR PATHOLOGY & ECG CENTRE provides accurate, reliable and affordable diagnostic services in Ashta and Indore. We are committed to quality healthcare, accurate reporting and patient satisfaction. Our mission is to provide trustworthy pathology testing, ECG services, preventive health checkups and home sample collection facilities.
-        </p>
-    </section>
-
-    <!-- OUR SERVICES -->
-    <section id="services" class="section">
-        <h2 class="title">Our Services</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>🩸 Pathology Tests</h3>
-                <p style="margin-top:10px; color:#555;">Routine & Special Laboratory Tests</p>
-            </div>
-            <div class="card">
-                <h3>❤️ ECG Service</h3>
-                <p style="margin-top:10px; color:#555;">Fast & Reliable ECG Diagnostics</p>
-            </div>
-            <div class="card">
-                <h3>🏠 Home Collection</h3>
-                <p style="margin-top:10px; color:#555;">Convenient Sample Collection At Home</p>
-            </div>
-            <div class="card">
-                <h3>🩺 Full Body Checkup</h3>
-                <p style="margin-top:10px; color:#555;">Comprehensive Health Screening</p>
-            </div>
-            <div class="card">
-                <h3>📄 WhatsApp Reports</h3>
-                <p style="margin-top:10px; color:#555;">Digital Report Delivery</p>
-            </div>
-            <div class="card">
-                <h3>⚡ Emergency Support</h3>
-                <p style="margin-top:10px; color:#555;">Quick Patient Assistance</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section class="section" style="background:#eef3f9;">
-        <h2 class="title">Why Choose STAR PATHOLOGY</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>✔ Accurate Reports</h3>
-                <p style="margin-top:10px; color:#555;">Reliable Diagnostic Testing</p>
-            </div>
-            <div class="card">
-                <h3>✔ Fast Reporting</h3>
-                <p style="margin-top:10px; color:#555;">Quick Turnaround Time</p>
-            </div>
-            <div class="card">
-                <h3>✔ Home Collection</h3>
-                <p style="margin-top:10px; color:#555;">Doorstep Sample Collection</p>
-            </div>
-            <div class="card">
-                <h3>✔ Modern Equipment</h3>
-                <p style="margin-top:10px; color:#555;">Latest Diagnostic Technology</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEST SEARCH -->
-    <section id="tests" class="section">
-        <h2 class="title">Search Available Tests</h2>
-        <div style="text-align:center; margin-bottom: 40px;">
-            <input type="text" id="testSearch" placeholder="Search Test Name (e.g., CBC, LFT)..." onkeyup="searchTests()" style="width:80%; max-width:500px; padding:15px; border-radius:10px; border:1px solid #ccc; font-size:16px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-        </div>
-        <div class="cards" id="testList">
-            <div class="card testItem"><h3>CBC</h3></div>
-            <div class="card testItem"><h3>ESR</h3></div>
-            <div class="card testItem"><h3>Blood Sugar</h3></div>
-            <div class="card testItem"><h3>HbA1c</h3></div>
-            <div class="card testItem"><h3>Thyroid Profile</h3></div>
-            <div class="card testItem"><h3>LFT</h3></div>
-            <div class="card testItem"><h3>KFT</h3></div>
-            <div class="card testItem"><h3>Lipid Profile</h3></div>
-            <div class="card testItem"><h3>Vitamin D3</h3></div>
-            <div class="card testItem"><h3>Vitamin B12</h3></div>
-
-Urine Routine
-Dengue Test
-Typhoid Test
-
-
+<title>
 STAR PATHOLOGY & ECG CENTRE
+</title>
+
+<meta name="description"
+content="STAR PATHOLOGY & ECG CENTRE Ashta & Indore">
+
+<meta name="keywords"
+content="Pathology Lab Ashta, Pathology Lab Indore, Blood Test, ECG Centre">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f8fc;
+color:#222;
+overflow-x:hidden;
+}
+
+.topbar{
+background:#001b44;
+color:white;
+padding:10px;
+text-align:center;
+font-size:14px;
+}
+
+header{
+background:white;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:75px;
+}
+
+.logo h2{
+color:#003366;
+}
+
+nav a{
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
+color:#003366;
+}
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('star1.jpg.jpeg');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:24px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+}
+
+.btn-primary{
+background:#00a8ff;
+color:white;
+}
+
+.btn-secondary{
+background:#d4af37;
+color:black;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#003366;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.branch{
+background:white;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+display:none;
+}
+
+.logo img{
+height:60px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+
+📞 Ashta : 7999440567 |
+📞 Indore : 6266492188 |
+✉ starpathologyreport7@gmail.com
+
+</div>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.jpg.jpg">
+
+<div>
+
+<h2>
+STAR PATHOLOGY
+</h2>
+
+<p>
+Trusted Diagnostic Services
+</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+  
+<a href="#branches">Branches</a>
+  
+<a href="#services">Services</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section id="home" class="hero">
+
+<div>
+
+<h1>
+STAR PATHOLOGY & ECG CENTRE
+</h1>
+
+<p>
 Accurate Results • Timely Reports • Trusted Service
-© 2026 STAR PATHOLOGY & ECG CENTRE. All Rights Reserved.
+</p>
 
-function searchTests() {
-let input = document.getElementById('testSearch').value.toLowerCase();
-let testItems = document.getElementsByClassName('testItem');
-for (let i = 0; i < testItems.length; i++) {
-if (!testItems[i].innerHTML.toLowerCase().includes(input)) {
-testItems[i].style.display = "none";
-} else {
-testItems[i].style.display = "block";
+<a href="tel:7999440567"
+class="btn btn-primary">
+
+Call Now
+
+</a>
+
+<a href="https://wa.me/917999440567"
+class="btn btn-secondary">
+
+Book Home Collection
+
+</a>
+
+</div>
+
+</section><!-- ABOUT US -->
+
+<section class="section">
+
+<h2 class="title">
+Welcome To STAR PATHOLOGY & ECG CENTRE
+</h2>
+
+<p style="
+max-width:1000px;
+margin:auto;
+text-align:center;
+font-size:18px;
+line-height:1.8;
+">
+
+STAR PATHOLOGY & ECG CENTRE provides accurate,
+reliable and affordable diagnostic services in
+Ashta and Indore.
+
+We are committed to quality healthcare,
+accurate reporting and patient satisfaction.
+
+Our mission is to provide trustworthy pathology
+testing, ECG services, preventive health checkups
+and home sample collection facilities.
+
+</p>
+
+</section>
+
+
+<!-- OUR SERVICES -->
+
+<section id="services" class="section">
+
+<h2 class="title">
+Our Services
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🩸 Pathology Tests</h3>
+<p>Routine & Special Laboratory Tests</p>
+</div>
+
+<div class="card">
+<h3>❤️ ECG Service</h3>
+<p>Fast & Reliable ECG Diagnostics</p>
+</div>
+
+<div class="card">
+<h3>🏠 Home Collection</h3>
+<p>Convenient Sample Collection At Home</p>
+</div>
+
+<div class="card">
+<h3>🩺 Full Body Checkup</h3>
+<p>Comprehensive Health Screening</p>
+</div>
+
+<div class="card">
+<h3>📄 WhatsApp Reports</h3>
+<p>Digital Report Delivery</p>
+</div>
+
+<div class="card">
+<h3>⚡ Emergency Support</h3>
+<p>Quick Patient Assistance</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="section">
+
+<h2 class="title">
+Why Choose STAR PATHOLOGY
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>✔ Accurate Reports</h3>
+<p>Reliable Diagnostic Testing</p>
+</div>
+
+<div class="card">
+<h3>✔ Fast Reporting</h3>
+<p>Quick Turnaround Time</p>
+</div>
+
+<div class="card">
+<h3>✔ Home Collection</h3>
+<p>Doorstep Sample Collection</p>
+</div>
+
+<div class="card">
+<h3>✔ Affordable Pricing</h3>
+<p>Best Healthcare Value</p>
+</div>
+
+</div>
+
+</section><!-- POPULAR LAB TESTS -->
+
+<section class="section">
+
+<h2 class="title">
+Popular Laboratory Tests
+</h2>
+
+<div class="cards">
+
+<div class="card"><h3>CBC</h3></div>
+<div class="card"><h3>ESR</h3></div>
+<div class="card"><h3>Blood Sugar</h3></div>
+<div class="card"><h3>HbA1c</h3></div>
+<div class="card"><h3>Thyroid Profile</h3></div>
+<div class="card"><h3>LFT</h3></div>
+<div class="card"><h3>KFT</h3></div>
+<div class="card"><h3>Lipid Profile</h3></div>
+<div class="card"><h3>Vitamin D3</h3></div>
+<div class="card"><h3>Vitamin B12</h3></div>
+<div class="card"><h3>Dengue Test</h3></div>
+<div class="card"><h3>Typhoid Test</h3></div>
+
+</div>
+
+</section>
+
+
+<!-- TEST SEARCH -->
+
+<section class="section">
+
+<h2 class="title">
+Search Available Tests
+</h2>
+
+<div style="text-align:center;">
+
+<input
+type="text"
+id="testSearch"
+placeholder="Search Test Name..."
+onkeyup="searchTests()"
+style="
+width:80%;
+max-width:500px;
+padding:15px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:16px;
+">
+
+</div>
+
+<br>
+
+<div class="cards" id="testList">
+
+<div class="card testItem">CBC</div>
+<div class="card testItem">ESR</div>
+<div class="card testItem">Blood Sugar</div>
+<div class="card testItem">HbA1c</div>
+<div class="card testItem">Thyroid Profile</div>
+<div class="card testItem">LFT</div>
+<div class="card testItem">KFT</div>
+<div class="card testItem">Lipid Profile</div>
+<div class="card testItem">Vitamin D3</div>
+<div class="card testItem">Vitamin B12</div>
+<div class="card testItem">Urine Routine</div>
+<div class="card testItem">Dengue Test</div>
+
+</div>
+
+</section>
+
+
+<!-- HEALTH PACKAGES -->
+
+<section class="section">
+
+<h2 class="title">
+Popular Health Packages
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Basic Health Checkup</h3>
+<p>CBC, Sugar, Urine Examination</p>
+</div>
+
+<div class="card">
+<h3>Diabetes Package</h3>
+<p>Blood Sugar, HbA1c</p>
+</div>
+
+<div class="card">
+<h3>Thyroid Package</h3>
+<p>T3, T4, TSH</p>
+</div>
+
+<div class="card">
+<h3>Executive Health Checkup</h3>
+<p>Complete Health Screening</p>
+</div>
+
+</div>
+
+</section><!-- GALLERY -->
+
+<section id="gallery" class="section">
+
+<h2 class="title">
+Our Gallery
+</h2>
+
+<div class="gallery">
+
+<img src="star1.jpg.jpeg" alt="Gallery">
+<img src="star2.jpg.jpeg" alt="Gallery">
+<img src="star3.jpg.jpeg" alt="Gallery">
+<img src="star4.jpg.jpeg" alt="Gallery">
+<img src="star5.jpg.jpeg" alt="Gallery">
+<img src="star6.jpg.jpeg" alt="Gallery">
+<img src="star7.jpg.jpeg" alt="Gallery">
+<img src="star8.jpeg" alt="Gallery">
+
+</div>
+
+</section>
+
+
+<!-- STATISTICS -->
+
+<section class="section">
+
+<h2 class="title">
+STAR PATHOLOGY Statistics
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h2>10,000+</h2>
+<p>Happy Patients</p>
+</div>
+
+<div class="card">
+<h2>500+</h2>
+<p>Laboratory Tests</p>
+</div>
+
+<div class="card">
+<h2>2</h2>
+<p>Branches</p>
+</div>
+
+<div class="card">
+<h2>24×7</h2>
+<p>Patient Support</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PATIENT TRUST -->
+
+<section class="section">
+
+<h2 class="title">
+Why Patients Trust Us
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>✔ Accurate Reporting</h3>
+<p>Reliable Laboratory Results</p>
+</div>
+
+<div class="card">
+<h3>✔ Modern Equipment</h3>
+<p>Latest Diagnostic Technology</p>
+</div>
+
+<div class="card">
+<h3>✔ Home Collection</h3>
+<p>Convenient Sample Collection</p>
+</div>
+
+<div class="card">
+<h3>✔ WhatsApp Reports</h3>
+<p>Quick Digital Report Delivery</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GOOGLE REVIEWS -->
+
+<section class="section">
+
+<h2 class="title">
+Patient Reviews
+</h2>
+
+<div class="cards">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Excellent Service & Accurate Reports</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Fast Reporting & Professional Staff</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Trusted Diagnostic Centre</p>
+</div>
+
+</div>
+
+</section><!-- LEADERSHIP TEAM -->
+
+<section class="section">
+
+<h2 class="title">
+Leadership Team
+</h2>
+
+<div class="cards">
+
+<div class="card" style="text-align:center;">
+
+<img src="director1.jpg"
+style="width:180px;height:180px;border-radius:50%;object-fit:cover;">
+
+<br><br>
+
+<h3>Dr. B. Kumar Ratnani</h3>
+
+<p>
+Consultant Pathologist
+</p>
+
+</div>
+
+
+<div class="card" style="text-align:center;">
+
+<img src="director2.jpg"
+style="width:180px;height:180px;border-radius:50%;object-fit:cover;">
+
+<br><br>
+
+<h3>Sandeep Thakur</h3>
+
+<p>
+Director
+</p>
+
+<p>
+Ashta & Indore Branch
+</p>
+
+</div>
+
+
+<div class="card" style="text-align:center;">
+
+<img src="director3.jpg"
+style="width:180px;height:180px;border-radius:50%;object-fit:cover;">
+
+<br><br>
+
+<h3>Mr. Shivi Thakur</h3>
+
+<p>
+Director Management
+</p>
+
+<p>
+Indore Branch
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="section">
+
+<h2 class="title">
+Frequently Asked Questions
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+Do You Provide Home Collection?
+</h3>
+
+<p>
+Yes, Home Sample Collection Is Available.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+How Can I Get My Report?
+</h3>
+
+<p>
+Reports Are Available On WhatsApp & Email.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Do You Provide ECG Service?
+</h3>
+
+<p>
+Yes, ECG Facility Is Available.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Can I Book Tests On WhatsApp?
+</h3>
+
+<p>
+Yes, Booking Is Available Through WhatsApp.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- HEALTH TIPS -->
+
+<section class="section">
+
+<h2 class="title">
+Health Tips
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>💧 Stay Hydrated</h3>
+
+<p>
+Drink Enough Water Daily.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🥗 Healthy Diet</h3>
+
+<p>
+Eat Nutritious Food Daily.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏃 Daily Exercise</h3>
+
+<p>
+Stay Active And Healthy.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🩺 Regular Checkups</h3>
+
+<p>
+Early Diagnosis Saves Lives.
+</p>
+
+</div>
+
+</div>
+
+</section><!-- HOME COLLECTION FORM -->
+
+<section class="section">
+
+<h2 class="title">
+Book Home Collection
+</h2>
+
+<div class="card">
+
+<input
+type="text"
+id="patientName"
+placeholder="Patient Name"
+style="width:100%;padding:15px;margin:10px 0;">
+
+<input
+type="text"
+id="patientMobile"
+placeholder="Mobile Number"
+style="width:100%;padding:15px;margin:10px 0;">
+
+<input
+type="text"
+id="patientAddress"
+placeholder="Address"
+style="width:100%;padding:15px;margin:10px 0;">
+
+<input
+type="text"
+id="patientTest"
+placeholder="Required Test"
+style="width:100%;padding:15px;margin:10px 0;">
+
+<button
+onclick="sendHomeCollection()"
+class="btn btn-primary">
+
+Book On WhatsApp
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- REPORT REQUEST -->
+
+<section class="section">
+
+<h2 class="title">
+Report Request
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>ASHTA REPORT</h3>
+
+<input
+type="text"
+id="ashtaName"
+placeholder="Patient Name"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<input
+type="text"
+id="ashtaLab"
+placeholder="Lab Number"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<button
+onclick="sendAshtaReport()"
+class="btn btn-primary">
+
+Send Request
+
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h3>INDORE REPORT</h3>
+
+<input
+type="text"
+id="indoreName"
+placeholder="Patient Name"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<input
+type="text"
+id="indoreLab"
+placeholder="Lab Number"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<button
+onclick="sendIndoreReport()"
+class="btn btn-primary">
+
+Send Request
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ONLINE PAYMENT -->
+
+<section class="section">
+
+<h2 class="title">
+Online Payment
+</h2>
+
+<div style="text-align:center;">
+
+<img
+src="star8.jpeg"
+style="
+max-width:350px;
+width:100%;
+border-radius:15px;">
+
+<p style="margin-top:20px;">
+Scan QR Code For Online Payment
+</p>
+
+</div>
+
+</section><!-- OUR BRANCHES -->
+
+<section class="section">
+
+<h2 class="title">
+Our Branches
+</h2>
+
+<div class="branch">
+
+<h3>
+🏥 STAR PATHOLOGY ASHTA
+</h3>
+
+<br>
+
+<p>
+Sai Colony, Near Dr Dalodiya Sir Clinic,
+In Front Of Care Hospital, Ashta
+</p>
+
+<br>
+
+<p>
+📞 7999440567
+</p>
+
+<p>
+✉ starpathologyreport7@gmail.com
+</p>
+
+<br>
+
+<a href="https://share.google/MKU2VcRMSJfSLZh03"
+target="_blank"
+class="btn btn-primary">
+
+View Location
+
+</a>
+
+</div>
+
+
+<div class="branch">
+
+<h3>
+🏥 STAR PATHOLOGY & ECG CENTRE INDORE
+</h3>
+
+<br>
+
+<p>
+49-F Beside HDFC Bank,
+Near CHL Hospital,
+Scheme No.114,
+Vijay Nagar,
+Indore
+</p>
+
+<br>
+
+<p>
+📞 6266492188
+</p>
+
+<p>
+✉ starpathology09@gmail.com
+</p>
+
+<br>
+
+<a href="https://share.google/32YDImgPsOT5Kx7cG"
+target="_blank"
+class="btn btn-primary">
+
+View Location
+
+</a>
+
+</div>
+
+</section>
+<!-- BRANCHES SECTION -->
+
+<section id="branches" class="section">
+
+<h2 class="title">Our Branches</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏥 Star Pathology Ashta</h3>
+
+<p>📍 Sai Colony, Near Dr Dalodiya Clinic, Ashta</p>
+
+<a href="https://maps.google.com" class="btn">📍 Map</a>
+
+<a href="tel:+917999440567" class="btn">📞 Call</a>
+
+<a href="https://wa.me/917999440567" class="btn">💬 WhatsApp</a>
+
+<a href="#" class="btn">⭐ Review</a>
+
+</div>
+
+<div class="card">
+
+<h3>🏥 Star Pathology & ECG Centre Indore</h3>
+
+<p>📍 Vijay Nagar, Near CHL Hospital, Indore</p>
+
+<a href="https://maps.google.com" class="btn">📍 Map</a>
+
+<a href="tel:+916266492188" class="btn">📞 Call</a>
+
+<a href="https://wa.me/916266492188" class="btn">💬 WhatsApp</a>
+
+<a href="#" class="btn">⭐ Review</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="section">
+
+<h2 class="title">
+Contact Us
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+📞 Ashta Branch
+</h3>
+
+<p>
+7999440567
+</p>
+
+<p>
+starpathologyreport7@gmail.com
+</p>
+
+<a href="tel:7999440567"
+class="btn btn-primary">
+
+Call Now
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>
+📞 Indore Branch
+</h3>
+
+<p>
+6266492188
+</p>
+
+<p>
+starpathology09@gmail.com
+</p>
+
+<a href="tel:6266492188"
+class="btn btn-primary">
+
+Call Now
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GOOGLE MAP LINKS -->
+
+<section class="section">
+
+<h2 class="title">
+Find Us On Google Maps
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Ashta Branch</h3>
+
+<a href="https://share.google/MKU2VcRMSJfSLZh03"
+target="_blank"
+class="btn btn-primary">
+
+Open Google Map
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Indore Branch</h3>
+
+<a href="https://share.google/32YDImgPsOT5Kx7cG"
+target="_blank"
+class="btn btn-primary">
+
+Open Google Map
+
+</a>
+
+</div>
+
+</div>
+
+</section><!-- FLOATING WHATSAPP BUTTON -->
+
+<a href="https://wa.me/917999440567"
+target="_blank"
+style="
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:18px;
+border-radius:50%;
+font-size:28px;
+text-decoration:none;
+z-index:9999;">
+
+💬
+
+</a>
+
+
+<!-- FLOATING CALL BUTTON -->
+
+<a href="tel:7999440567"
+style="
+position:fixed;
+right:20px;
+bottom:90px;
+background:#003366;
+color:white;
+padding:18px;
+border-radius:50%;
+font-size:28px;
+text-decoration:none;
+z-index:9999;">
+
+📞
+
+</a>
+
+
+<!-- FOOTER -->
+
+<footer
+style="
+background:#001b44;
+color:white;
+padding:50px 20px;
+text-align:center;">
+
+<h2>
+STAR PATHOLOGY & ECG CENTRE
+</h2>
+
+<br>
+
+<p>
+Accurate Results • Timely Reports • Trusted Service
+</p>
+
+<br>
+
+<p>
+📍 Ashta | Indore
+</p>
+
+<p>
+📞 7999440567 | 6266492188
+</p>
+
+<p>
+✉ starpathologyreport7@gmail.com
+</p>
+
+<p>
+✉ starpathology09@gmail.com
+</p>
+
+<br>
+
+<p>
+Free Home Sample Collection Available
+</p>
+
+<br>
+
+<p>
+© 2026 STAR PATHOLOGY & ECG CENTRE
+All Rights Reserved.
+</p>
+
+</footer>
+
+
+<script>
+
+function searchTests(){
+
+let input =
+document.getElementById("testSearch")
+.value.toUpperCase();
+
+let items =
+document.getElementsByClassName("testItem");
+
+for(let i=0;i<items.length;i++){
+
+let txt =
+items[i].innerText.toUpperCase();
+
+if(txt.indexOf(input)>-1){
+items[i].style.display="";
 }
+else{
+items[i].style.display="none";
 }
+
+}
+
 }
 
 
-### 🚀 Isko lagane ke baad kya change dikhega?
-* Aapki website ka design 100% same rahega.
-* Faltu ka double-double data hat gaya hai jisse page fast open hoga.
-* Ab agar koi **Search bar** mein "CBC" ya koi test likhega, toh baaki tests apne aap chup jayenge aur wahi test screen par filter ho jayega.
+function sendHomeCollection(){
 
-Ise lagane ke baad check karke batao bhai, koi aur help chahiye ho toh!
+var name =
+document.getElementById("patientName").value;
+
+var mobile =
+document.getElementById("patientMobile").value;
+
+var address =
+document.getElementById("patientAddress").value;
+
+var test =
+document.getElementById("patientTest").value;
+
+var msg =
+"HOME COLLECTION REQUEST%0A%0A" +
+"Patient Name : " + name + "%0A" +
+"Mobile : " + mobile + "%0A" +
+"Address : " + address + "%0A" +
+"Required Test : " + test;
+
+window.open(
+"https://wa.me/917999440567?text=" + msg,
+"_blank"
+);
+
+}
 
 
+function sendAshtaReport(){
+
+var name =
+document.getElementById("ashtaName").value;
+
+var lab =
+document.getElementById("ashtaLab").value;
+
+var msg =
+"ASHTA REPORT REQUEST%0A%0A" +
+"Patient Name : " + name + "%0A" +
+"Lab Number : " + lab;
+
+window.open(
+"https://wa.me/917999440567?text=" + msg,
+"_blank"
+);
+
+}
+
+
+function sendIndoreReport(){
+
+var name =
+document.getElementById("indoreName").value;
+
+var lab =
+document.getElementById("indoreLab").value;
+
+var msg =
+"INDORE REPORT REQUEST%0A%0A" +
+"Patient Name : " + name + "%0A" +
+"Lab Number : " + lab;
+
+window.open(
+"https://wa.me/916266492188?text=" + msg,
+"_blank"
+);
+
+}
+var images = [
+
+"star1.jpg.jpeg",
+"star2.jpg.jpeg",
+"star3.jpg.jpeg",
+"star4.jpg.jpeg",
+"star5.jpg.jpeg"
+
+];
+
+var i = 0;
+
+setInterval(function(){
+
+var slider =
+document.getElementById("slider");
+
+if(slider){
+
+i++;
+
+if(i >= images.length){
+
+i = 0;
+
+}
+
+slider.src = images[i];
+
+}
+
+},3000);
+</script>
+
+<!-- QUALITY SECTION -->
+
+<section class="section">
+
+<h2 class="title">
+Quality & Reliability
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>✔ Accurate Reporting</h3>
+<p>High Quality Diagnostic Services</p>
+</div>
+
+<div class="card">
+<h3>✔ Experienced Team</h3>
+<p>Professional Laboratory Staff</p>
+</div>
+
+<div class="card">
+<h3>✔ Modern Equipment</h3>
+<p>Advanced Diagnostic Technology</p>
+</div>
+
+<div class="card">
+<h3>✔ Patient Satisfaction</h3>
+<p>Trusted By Thousands Of Patients</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LABORATORY EQUIPMENT -->
+
+<section class="section">
+
+<h2 class="title">
+Laboratory Equipment
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>CBC Analyzer</h3>
+<p>Accurate Hematology Testing</p>
+</div>
+
+<div class="card">
+<h3>Biochemistry Analyzer</h3>
+<p>Routine & Advanced Testing</p>
+</div>
+
+<div class="card">
+<h3>Electrolyte Analyzer</h3>
+<p>Sodium, Potassium & Chloride</p>
+</div>
+
+<div class="card">
+<h3>ECG Machine</h3>
+<p>Reliable Cardiac Diagnostics</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DOCTOR REFERRAL -->
+
+<section class="section">
+
+<h2 class="title">
+Doctor Referral Support
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Fast Reporting</h3>
+<p>Quick Report Delivery For Doctors</p>
+</div>
+
+<div class="card">
+<h3>WhatsApp Reports</h3>
+<p>Digital Reports For Easy Access</p>
+</div>
+
+<div class="card">
+<h3>Patient Coordination</h3>
+<p>Dedicated Patient Support</p>
+</div>
+
+<div class="card">
+<h3>Reliable Diagnostics</h3>
+<p>Trusted By Healthcare Professionals</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EMERGENCY CONTACT -->
+
+<section class="section">
+
+<h2 class="title">
+Emergency Contact
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📞 Ashta Branch</h3>
+<p>7999440567</p>
+</div>
+
+<div class="card">
+<h3>📞 Indore Branch</h3>
+<p>6266492188</p>
+</div>
+
+<div class="card">
+<h3>📧 Email Support</h3>
+<p>starpathologyreport7@gmail.com</p>
+</div>
+
+<div class="card">
+<h3>💬 WhatsApp Support</h3>
+<p>Available Daily</p>
+</div>
+
+</div>
+
+</section><!-- FULL BODY CHECKUP HIGHLIGHT -->
+
+<section class="section">
+
+<h2 class="title">
+Health Checkup Packages
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Basic Package</h3>
+<p>CBC, ESR, Sugar, Urine Routine</p>
+</div>
+
+<div class="card">
+<h3>Diabetes Package</h3>
+<p>Fasting Sugar, PP Sugar, HbA1c</p>
+</div>
+
+<div class="card">
+<h3>Thyroid Package</h3>
+<p>T3, T4, TSH</p>
+</div>
+
+<div class="card">
+<h3>Full Body Checkup</h3>
+<p>Complete Preventive Health Screening</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICE AREA -->
+
+<section class="section">
+
+<h2 class="title">
+Service Coverage Area
+</h2>
+
+<div class="cards">
+
+<div class="card">Ashta</div>
+<div class="card">Jawar</div>
+<div class="card">Sehore</div>
+<div class="card">Indore</div>
+<div class="card">Shujalpur</div>
+<div class="card">Kannod</div>
+<div class="card">Ichhawar</div>
+<div class="card">Nearby Villages</div>
+
+</div>
+
+</section>
+
+
+<!-- SOCIAL MEDIA -->
+
+<section class="section">
+
+<h2 class="title">
+Follow Us
+</h2>
+
+<div style="text-align:center;">
+
+<a href="#"
+class="btn btn-primary">
+Instagram
+</a>
+
+<a href="#"
+class="btn btn-primary">
+Facebook
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+Google Review
+</a>
+
+</div>
+
+</section>
+
+
+<!-- WHY STAR PATHOLOGY -->
+
+<section class="section">
+
+<h2 class="title">
+Why STAR PATHOLOGY?
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>10000+</h3>
+<p>Patients Served</p>
+</div>
+
+<div class="card">
+<h3>500+</h3>
+<p>Tests Available</p>
+</div>
+
+<div class="card">
+<h3>2</h3>
+<p>Branches</p>
+</div>
+
+<div class="card">
+<h3>24×7</h3>
+<p>Support Assistance</p>
+</div>
+
+</div>
+
+</section><!-- REPORT DOWNLOAD -->
+
+<section class="section">
+
+<h2 class="title">
+Report Download
+</h2>
+
+<div class="card" style="text-align:center;">
+
+<p>
+Enter Lab Number And Contact Us For Report
+</p>
+
+<br>
+
+<input
+type="text"
+placeholder="Enter Lab Number"
+style="
+width:80%;
+max-width:400px;
+padding:15px;
+border-radius:10px;
+border:1px solid #ccc;">
+
+<br><br>
+
+<a href="https://wa.me/917999440567"
+class="btn btn-primary">
+
+Request Report
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- PATIENT LOGIN -->
+
+<section class="section">
+
+<h2 class="title">
+Patient Portal
+</h2>
+
+<div class="card" style="text-align:center;">
+
+<h3>Patient Login</h3>
+
+<p>
+Online Report Access Coming Soon
+</p>
+
+<br>
+
+<a href="#"
+class="btn btn-primary">
+
+Patient Login
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- DOCTOR LOGIN -->
+
+<section class="section">
+
+<h2 class="title">
+Doctor Portal
+</h2>
+
+<div class="card" style="text-align:center;">
+
+<h3>Doctor Login</h3>
+
+<p>
+Doctor Report Access Coming Soon
+</p>
+
+<br>
+
+<a href="#"
+class="btn btn-primary">
+
+Doctor Login
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- TEST DIRECTORY -->
+
+<section class="section">
+
+<h2 class="title">
+Available Tests
+</h2>
+
+<div class="cards">
+
+<div class="card">CBC</div>
+<div class="card">ESR</div>
+<div class="card">HbA1c</div>
+<div class="card">Blood Sugar</div>
+<div class="card">LFT</div>
+<div class="card">KFT</div>
+<div class="card">Lipid Profile</div>
+<div class="card">Thyroid Profile</div>
+<div class="card">Vitamin D3</div>
+<div class="card">Vitamin B12</div>
+<div class="card">Urine Routine</div>
+<div class="card">Dengue Test</div>
+
+</div>
+
+<br>
+
+<div style="text-align:center;">
+
+<a href="ratelist.html"
+class="btn btn-secondary">
+
+View Complete Test List
+
+</a>
+
+</div>
+
+</section><!-- PROFESSIONAL BANNER -->
+
+<section class="section">
+
+<h2 class="title">
+STAR PATHOLOGY & ECG CENTRE
+</h2>
+
+<div class="card" style="text-align:center;">
+
+<h3>
+Accurate Results • Timely Reports • Trusted Service
+</h3>
+
+<br>
+
+<p>
+Advanced Diagnostic Services For Better Healthcare
+</p>
+
+</div>
+
+</section>
+
+
+<!-- VISITOR COUNTER -->
+
+<section class="section">
+
+<h2 class="title">
+Website Visitors
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h2>10,000+</h2>
+<p>Total Visitors</p>
+</div>
+
+<div class="card">
+<h2>5,000+</h2>
+<p>Report Requests</p>
+</div>
+
+<div class="card">
+<h2>2</h2>
+<p>Branches</p>
+</div>
+
+<div class="card">
+<h2>500+</h2>
+<p>Tests Available</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GOOGLE REVIEW BUTTON -->
+
+<section class="section">
+
+<h2 class="title">
+Rate Us On Google
+</h2>
+
+<div style="text-align:center;">
+
+<a href="#"
+class="btn btn-primary">
+
+⭐⭐⭐⭐⭐ Give Review
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- SOCIAL LINKS -->
+
+<section class="section">
+
+<h2 class="title">
+Connect With Us
+</h2>
+
+<div style="text-align:center;">
+
+<a href="#"
+class="btn btn-primary">
+Instagram
+</a>
+
+<a href="#"
+class="btn btn-primary">
+Facebook
+</a>
+
+<a href="https://wa.me/917999440567"
+class="btn btn-secondary">
+WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CLOSING MESSAGE -->
+
+<section class="section">
+
+<div class="card" style="text-align:center;">
+
+<h2>
+Thank You For Trusting STAR PATHOLOGY
+</h2>
+
+<br>
+
+<p>
+Your Health Is Our Priority
+</p>
+
+<p>
+Accurate Testing • Fast Reporting • Patient Satisfaction
+</p>
+
+</div>
+
+</section><!-- SECTION 13 : PROFESSIONAL UPGRADE -->
+
+<section class="section">
+
+<h2 class="title">
+Quick Access
+</h2>
+
+<div style="text-align:center;">
+
+<a href="tel:7999440567"
+class="btn btn-primary">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/917999440567"
+class="btn btn-primary">
+💬 WhatsApp
+</a>
+
+<a href="#contact"
+class="btn btn-primary">
+📍 Contact
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+📄 Get Report
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- AUTO IMAGE SLIDER -->
+
+<section class="section">
+
+<h2 class="title">
+STAR PATHOLOGY Highlights
+</h2>
+
+<div style="text-align:center;">
+
+<img id="slider"
+src="star1.jpg.jpeg"
+style="
+width:100%;
+max-width:900px;
+height:450px;
+object-fit:cover;
+border-radius:15px;">
+
+</div>
+
+</section>
+
+
+
+<!-- GOOGLE REVIEW -->
+
+<section class="section">
+
+<h2 class="title">
+Rate Us On Google
+</h2>
+
+<div style="text-align:center;">
+
+<a href="#"
+class="btn btn-primary">
+
+⭐⭐⭐⭐⭐ Leave A Review
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- SOCIAL MEDIA -->
+
+<section class="section">
+
+<h2 class="title">
+Follow STAR PATHOLOGY
+</h2>
+
+<div style="text-align:center;">
+
+<a href="#"
+class="btn btn-primary">
+
+Instagram
+
+</a>
+
+<a href="#"
+class="btn btn-primary">
+
+Facebook
+
+</a>
+
+<a href="https://wa.me/917999440567"
+class="btn btn-secondary">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- PROMOTIONAL BANNER -->
+
+<section class="section">
+
+<div class="card"
+style="text-align:center;">
+
+<h2>
+🩸 FREE HOME COLLECTION
+</h2>
+
+<br>
+
+<h3>
+📄 WhatsApp Report Available
+</h3>
+
+<br>
+
+<h3>
+❤️ ECG Service Available
+</h3>
+
+<br>
+
+<h3>
+🏥 Ashta & Indore Branch
+</h3>
+
+<br>
+
+<h3>
+🔬 500+ Laboratory Tests Available
+</h3>
+
+</div>
+
+</section>
+  <!-- IMAGE SLIDER -->
+
+<section class="section">
+
+<h2 class="title">Our Gallery</h2>
+
+<div style="text-align:center;">
+
+<img id="slider"
+src="star1.jpg.jpeg"
+style="
+width:90%;
+max-width:900px;
+height:500px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+">
+
+</div>
+
+</section>
+<!-- SOCIAL + GOOGLE REVIEW + QUICK ACTIONS -->
+
+<section class="section">
+
+<h2 class="title">Connect With Us</h2>
+
+<div style="text-align:center;">
+
+<a href="https://www.instagram.com/"
+target="_blank"
+class="btn">
+Instagram
+</a>
+
+<a href="https://www.facebook.com/"
+target="_blank"
+class="btn">
+Facebook
+</a>
+
+<a href="https://g.page/r/CXXXXXXXX/review"
+target="_blank"
+class="btn">
+Google Review
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://wa.me/917999440567"
+target="_blank"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+z-index:9999;
+">
+💬
+</a>
+
+
+<!-- FLOATING CALL -->
+
+<a href="tel:+917999440567"
+style="
+position:fixed;
+bottom:90px;
+right:20px;
+background:#e53935;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+z-index:9999;
+">
+📞
+</a>
+
+
+<!-- FLOATING MAP -->
+
+<a href="https://maps.google.com"
+target="_blank"
+style="
+position:fixed;
+bottom:160px;
+right:20px;
+background:#1e88e5;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+z-index:9999;
+">
+📍
+</a>
